@@ -96,15 +96,39 @@ body {
 	background-color: #FCE8ED;
 }
 
-.timeline-tweetbox img {
+.timeline-tweetbox-avatar {
 	
 	height: 32px;
 	width: 32px;
 	border-radius: 50%;
 	border: 0;
+	float: left;
+	left: 28px;
+	position: absolute;
+	top: 13px;
 
 }
 
 .timeline-tweetbox form {
 	margin-left: 56px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.tweetbox {
+	width: 100%;
+	float: left;
+	margin: 10px;
+	border: 1px solid #F9C6D3;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.tweetButton {
+	background-color: #E81C4F;
+	border-radius: 100px;
+	font-weight: bold;
+	padding: 6px 16px;
+	border: 0;
 }
