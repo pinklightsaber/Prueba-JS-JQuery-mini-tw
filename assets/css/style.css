@@ -143,6 +143,7 @@ body {
 	position: relative;
 	min-height: 51px;
 	padding: 9px 12px;
+	max-height: 150px;
 }
 
 .tweet:hover {
@@ -150,6 +151,8 @@ body {
 }
 
 .tweet-content {
+	margin-left: 70px;
+	color: #657786;
 
 }
 
@@ -161,14 +164,26 @@ body {
 
 }
 
-.tweet-header strong {
 
-}
+
+.tweet-header span {
+	color: #111;
+	  }
 
 .tweet-header p {
 	
-
+	display: table-cell;
 	font-size: 14px;
 	color: #657786;
 }
+
+.content {
+	display: table-row;
 }
+
+.tweet-tool i  {
+	padding: 0 100px;
+
+}
+
+
