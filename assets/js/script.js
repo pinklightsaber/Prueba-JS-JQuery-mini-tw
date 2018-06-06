@@ -3,7 +3,10 @@ $(function() {
 	
 	$('.tweetButton').on('click', function(){
 		var tweet = $('.tweetbox').val();
-		console.log(tweet);
+
+		var tweetNum = parseInt($('.tweetNum').text());
+		tweetNum++;
+		$('.tweetNum').html(tweetNum);
 
 		$('#timeline-container').append(
 			'<div class="tweet">'
@@ -18,6 +21,7 @@ $(function() {
 			+'<span class ="n">0</span><i class="fas fa-trash-alt borrar">'
 			+'</i></div></div></div>'
 			);
+	
 	});
 
 	$('#timeline-container').on('click', '.borrar', function(){
@@ -26,8 +30,7 @@ $(function() {
 
 	$('#timeline-container').on('click','.like', function(){
 
-		n = $(this).siblings().eq(0).text();
-		n = parseInt (n);
+		var n = parseInt($(this).siblings().eq(0).text());
 		$(this).siblings().eq(0).text(n + 1);
 		$(this).css('color', 'tomato');	
 
