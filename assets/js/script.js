@@ -1,6 +1,8 @@
 $(function() {
 
-	
+	$('.tweetbox').on('focus', function(){
+		$('.tweetbox').val('');
+	});
 	$('.tweetButton').on('click', function(){
 		var tweet = $('.tweetbox').val();
 
